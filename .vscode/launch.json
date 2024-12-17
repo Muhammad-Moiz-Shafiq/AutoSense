@@ -1,0 +1,95 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Qt Application with Visual Studio Debugger",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "visualizerFile": "${command:qt-cpp.natvis}",
+      "windows": {
+        "environment": [
+          {
+            "name": "PATH",
+            "value": "${env:PATH};${command:qt-cpp.kitDirectory}${/}bin"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Debug Qt Application with lldb",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "visualizerFile": "${command:qt-cpp.natvis}",
+      "showDisplayString": true,
+      "linux": {
+        "MIMode": "lldb",
+        "miDebuggerPath": "/usr/bin/lldb"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "windows": {
+        "environment": [
+          {
+            "name": "PATH",
+            "value": "${env:PATH};${command:qt-cpp.kitDirectory}${/}bin"
+          }
+        ],
+        "MIMode": "lldb"
+      }
+    },
+    {
+      "name": "Debug Qt Application with cppdbg",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "visualizerFile": "${command:qt-cpp.natvis}",
+      "showDisplayString": true,
+      "linux": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "windows": {
+        "environment": [
+          {
+            "name": "PATH",
+            "value": "${env:PATH};${command:qt-cpp.kitDirectory}${/}bin"
+          }
+        ],
+        "MIMode": "gdb",
+        "miDebuggerPath": "${command:qt-cpp.minGWgdb}"
+      }
+    },
+    
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/Uni/Sem 3/DSA/Project",
+      "program": "d:/Uni/Sem 3/DSA/Project/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

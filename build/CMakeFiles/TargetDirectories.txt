@@ -1,0 +1,3 @@
+D:/Uni/Sem 3/DSA/Project/build/CMakeFiles/QtProject.dir
+D:/Uni/Sem 3/DSA/Project/build/CMakeFiles/edit_cache.dir
+D:/Uni/Sem 3/DSA/Project/build/CMakeFiles/rebuild_cache.dir
