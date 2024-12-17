@@ -4,8 +4,45 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), inputField(new QLineEdit(this)),
       suggestionBox(new QListWidget(this)), analyzeButton(new QPushButton("Analyze", this)) {
+//styling
+    this->setStyleSheet(
+        "QMainWindow {"
+        "    background-color:rgb(37, 33, 33);"
+        "}"
+        "QLineEdit {"
+        "    border: 1px solid #ccc;"
+        "    border-radius: 8px;"
+        "    padding: 5px;margin: 5px 30px;"
+        "    background-color: rgb(58, 59, 61);font-size: 16px;"
+        "}"
+        "QPushButton {"
+        "    background-color:rgb(58, 59, 61);"
+        "    color: white;"
+        "    border: none;margin: 5px 30px;font-size: 18px;"
+        "    padding: 8px 15px;"
+        "    border-radius: 8px;"
+        "}"
+        "QPushButton:hover {"
+        "    background-color:rgb(92, 127, 163);font-style:italic;"
+        "}"
+        "QListWidget {"
+        "    border: 1px solid #ccc;margin: 5px 30px;padding:5px;"
+        "    background-color:rgb(58, 59, 61);font-size: 16px;"
+        "    border-radius: 8px;"
+        "}"
+        "#logoLabel {margin: 50px 20px 50px;"
+        "font-size: 40px;text-align:center;"
+        " font-weight: bold;"
+        " color: rgb(162, 230, 252);}"
+    );
+
+     QLabel *logoLabel = new QLabel("A U T O S E N S E", this);
+    logoLabel->setAlignment(Qt::AlignCenter);
+    logoLabel->setObjectName("logoLabel");
+    inputField->setPlaceholderText("Enter text here");
     QWidget *centralWidget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(centralWidget);
+    layout->addWidget(logoLabel, 0, Qt::AlignCenter);
     layout->addWidget(inputField);
     layout->addWidget(suggestionBox);
     layout->addWidget(analyzeButton);

@@ -46,6 +46,7 @@ D:/Uni/Sem\ 3/DSA/Project/build/QtProject_autogen/include_Release/EWIEGA46WW/moc
   C:/Qt/6.8.1/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qiterable.h \
@@ -139,6 +140,7 @@ D:/Uni/Sem\ 3/DSA/Project/build/QtProject_autogen/include_Release/EWIEGA46WW/moc
   C:/Qt/6.8.1/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qpolygon.h \
@@ -156,6 +158,7 @@ D:/Uni/Sem\ 3/DSA/Project/build/QtProject_autogen/include_Release/EWIEGA46WW/moc
   C:/Qt/6.8.1/mingw_64/include/QtGui/qvalidator.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/QListWidget \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMainWindow \
@@ -170,6 +173,7 @@ D:/Uni/Sem\ 3/DSA/Project/build/QtProject_autogen/include_Release/EWIEGA46WW/moc
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \

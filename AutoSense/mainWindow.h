@@ -5,6 +5,7 @@
 #include <QVBoxLayout>
 #include <QLineEdit>
 #include <QListWidget>
+#include <QLabel>
 #include <QPushButton>
 #include "trie.h"
 #include "fileHandling.h"
@@ -24,6 +25,7 @@ private:
     QLineEdit *inputField;
     QListWidget *suggestionBox;
     QPushButton *analyzeButton;
+    QLabel *logoLabel;
     Trie trie;
 };
 
