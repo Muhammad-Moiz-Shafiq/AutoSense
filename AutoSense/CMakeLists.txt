@@ -14,12 +14,13 @@ endif()
 
 # Set Qt installation path (update this to your Qt installation directory)
 set(CMAKE_PREFIX_PATH "C:/Qt/6.8.1/mingw_64/lib/cmake")
-
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # Find the necessary Qt components
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # Add the executable
-add_executable(QtProject TrieDS.cpp)
+add_executable(QtProject mainWindow.cpp main.cpp fileHandling.cpp trie.cpp)
 
 # Link against Qt libraries
 target_link_libraries(QtProject PRIVATE Qt6::Widgets)

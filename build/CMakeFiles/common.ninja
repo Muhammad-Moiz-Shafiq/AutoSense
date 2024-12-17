@@ -76,9 +76,36 @@ build C$:/Program$ Files/Microsoft$ Visual$ Studio/2022/Community/Common7/IDE/Co
 
 
 #############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional$:Debug: CLEAN_ADDITIONAL
+  CONFIG = Debug
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional$:Release: CLEAN_ADDITIONAL
+  CONFIG = Release
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional$:RelWithDebInfo: CLEAN_ADDITIONAL
+  CONFIG = RelWithDebInfo
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
+
+
+#############################################
 # Clean byproducts.
 
-build CMakeFiles/cmake_byproducts_for_clean_target: phony
+build CMakeFiles/cmake_byproducts_for_clean_target: phony QtProject_autogen_timestamp_deps$:Debug CMakeFiles/Debug/QtProject_autogen_timestamp_deps.util QtProject_autogen_timestamp_deps$:Release CMakeFiles/Release/QtProject_autogen_timestamp_deps.util QtProject_autogen_timestamp_deps$:RelWithDebInfo CMakeFiles/RelWithDebInfo/QtProject_autogen_timestamp_deps.util QtProject_autogen$:Debug CMakeFiles/Debug/QtProject_autogen.util QtProject_autogen$:Release CMakeFiles/Release/QtProject_autogen.util QtProject_autogen$:RelWithDebInfo CMakeFiles/RelWithDebInfo/QtProject_autogen.util
 
 
 #############################################

@@ -15,7 +15,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -30,7 +32,9 @@
 					"name" : "QtProject",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -39,8 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QtProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QtProject-Debug-495761e89b6479e72a8f.json",
+					"jsonFile" : "target-QtProject-Debug-1afc72084c7f89871368.json",
 					"name" : "QtProject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtProject_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtProject_autogen-Debug-0853c7350fb519689127.json",
+					"name" : "QtProject_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtProject_autogen_timestamp_deps-Debug-bbcbcf809aacc14847cc.json",
+					"name" : "QtProject_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
 			]
@@ -59,7 +77,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -74,7 +94,9 @@
 					"name" : "QtProject",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -83,8 +105,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QtProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QtProject-Release-c8aa82114217b3be19ac.json",
+					"jsonFile" : "target-QtProject-Release-aa3c4db3ff9b47731f21.json",
 					"name" : "QtProject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtProject_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtProject_autogen-Release-73fcfc3f1ac23c56aa51.json",
+					"name" : "QtProject_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtProject_autogen_timestamp_deps-Release-3de0f16c153f0408d16e.json",
+					"name" : "QtProject_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
 			]
@@ -103,7 +139,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -118,7 +156,9 @@
 					"name" : "QtProject",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -127,8 +167,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QtProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QtProject-RelWithDebInfo-d9b43fbd1ad54d6c48df.json",
+					"jsonFile" : "target-QtProject-RelWithDebInfo-e5c8eb5ad47d55bb0754.json",
 					"name" : "QtProject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtProject_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtProject_autogen-RelWithDebInfo-5d2b1c81b22acca2be87.json",
+					"name" : "QtProject_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtProject_autogen_timestamp_deps-RelWithDebInfo-cf6af73e4878b5127c19.json",
+					"name" : "QtProject_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
 			]

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/QtProject.exe"
+			"path" : "Release/QtProject.exe"
 		},
 		{
-			"path" : "Debug/QtProject.pdb"
+			"path" : "Release/QtProject.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -43,19 +43,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 22,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 19,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -176,7 +176,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++17"
 				}
 			],
 			"defines" : 
@@ -192,6 +192,10 @@
 				{
 					"backtrace" : 2,
 					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 2,
@@ -224,6 +228,16 @@
 			],
 			"includes" : 
 			[
+				{
+					"path" : "D:/Uni/Sem 3/DSA/Project/build"
+				},
+				{
+					"path" : "D:/Uni/Sem 3/DSA/Project/AutoSense"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Release"
+				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
@@ -262,8 +276,22 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QtProject_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "QtProject::@6890427a1f51a3e7e1df",
@@ -272,7 +300,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -344,17 +372,72 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				5
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				6
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "TrieDS.cpp",
+			"path" : "mainWindow.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "fileHandling.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "trie.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

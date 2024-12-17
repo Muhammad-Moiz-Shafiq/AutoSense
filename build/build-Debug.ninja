@@ -10,6 +10,10 @@ build QtProject: phony Debug/QtProject.exe
 
 build QtProject.exe: phony Debug/QtProject.exe
 
+build QtProject_autogen: phony QtProject_autogen$:Debug
+
+build QtProject_autogen_timestamp_deps: phony QtProject_autogen_timestamp_deps$:Debug
+
 
 #############################################
 # Folder: D:/Uni/Sem 3/DSA/Project/build

@@ -10,6 +10,10 @@ build QtProject: phony RelWithDebInfo/QtProject.exe
 
 build QtProject.exe: phony RelWithDebInfo/QtProject.exe
 
+build QtProject_autogen: phony QtProject_autogen$:RelWithDebInfo
+
+build QtProject_autogen_timestamp_deps: phony QtProject_autogen_timestamp_deps$:RelWithDebInfo
+
 
 #############################################
 # Folder: D:/Uni/Sem 3/DSA/Project/build
