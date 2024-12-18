@@ -245,6 +245,12 @@
 			null
 		],
 		[
+			"D:/Uni/Sem 3/DSA/Project/AutoSense/splashScreen.h",
+			"Mu",
+			"EWIEGA46WW/moc_splashScreen.cpp",
+			null
+		],
+		[
 			"D:/Uni/Sem 3/DSA/Project/AutoSense/trie.h",
 			"Mu",
 			"EWIEGA46WW/moc_trie.cpp",
@@ -354,6 +360,7 @@
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.cpp", "Mu", null ],
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/main.cpp", "Mu", null ],
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.cpp", "Mu", null ],
+		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/splashScreen.cpp", "Mu", null ],
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/trie.cpp", "Mu", null ]
 	],
 	"VERBOSITY" : 0

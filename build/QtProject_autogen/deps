@@ -30,6 +30,7 @@ QtProject_autogen/timestamp: \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/Windows-windres.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/Windows.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake \
+	C:/Qt/6.8.1/mingw_64/include/QtCore/QString \
 	C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.8.1/mingw_64/include/QtCore/q20iterator.h \
 	C:/Qt/6.8.1/mingw_64/include/QtCore/q20memory.h \
@@ -592,6 +593,8 @@ QtProject_autogen/timestamp: \
 	D:/Uni/Sem\ 3/DSA/Project/AutoSense/main.cpp \
 	D:/Uni/Sem\ 3/DSA/Project/AutoSense/mainWindow.cpp \
 	D:/Uni/Sem\ 3/DSA/Project/AutoSense/mainWindow.h \
+	D:/Uni/Sem\ 3/DSA/Project/AutoSense/splashScreen.cpp \
+	D:/Uni/Sem\ 3/DSA/Project/AutoSense/splashScreen.h \
 	D:/Uni/Sem\ 3/DSA/Project/AutoSense/trie.cpp \
 	D:/Uni/Sem\ 3/DSA/Project/AutoSense/trie.h \
 	D:/Uni/Sem\ 3/DSA/Project/build/CMakeFiles/3.26.4-msvc4/CMakeCXXCompiler.cmake \

@@ -20,7 +20,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # Add the executable
-add_executable(QtProject mainWindow.cpp main.cpp fileHandling.cpp trie.cpp)
+add_executable(QtProject mainWindow.cpp main.cpp fileHandling.cpp trie.cpp splashScreen.cpp)
 
 # Link against Qt libraries
 target_link_libraries(QtProject PRIVATE Qt6::Widgets)

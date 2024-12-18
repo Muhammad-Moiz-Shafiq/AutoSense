@@ -31,6 +31,12 @@
 },
 {
   "directory": "D:/Uni/Sem 3/DSA/Project/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\\\"Debug\\\" -I\"D:/Uni/Sem 3/DSA/Project/build\" -I\"D:/Uni/Sem 3/DSA/Project/AutoSense\" -I\"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug\" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -g -std=gnu++17 -o CMakeFiles\\QtProject.dir\\Debug\\splashScreen.cpp.obj -c \"D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\splashScreen.cpp\"",
+  "file": "D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\splashScreen.cpp",
+  "output": "CMakeFiles\\QtProject.dir\\Debug\\splashScreen.cpp.obj"
+},
+{
+  "directory": "D:/Uni/Sem 3/DSA/Project/build",
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\\\"Release\\\" -I\"D:/Uni/Sem 3/DSA/Project/build\" -I\"D:/Uni/Sem 3/DSA/Project/AutoSense\" -I\"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Release\" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\QtProject.dir\\Release\\QtProject_autogen\\mocs_compilation_Release.cpp.obj -c \"D:\\Uni\\Sem 3\\DSA\\Project\\build\\QtProject_autogen\\mocs_compilation_Release.cpp\"",
   "file": "D:\\Uni\\Sem 3\\DSA\\Project\\build\\QtProject_autogen\\mocs_compilation_Release.cpp",
   "output": "CMakeFiles\\QtProject.dir\\Release\\QtProject_autogen\\mocs_compilation_Release.cpp.obj"
@@ -61,6 +67,12 @@
 },
 {
   "directory": "D:/Uni/Sem 3/DSA/Project/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\\\"Release\\\" -I\"D:/Uni/Sem 3/DSA/Project/build\" -I\"D:/Uni/Sem 3/DSA/Project/AutoSense\" -I\"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Release\" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\QtProject.dir\\Release\\splashScreen.cpp.obj -c \"D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\splashScreen.cpp\"",
+  "file": "D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\splashScreen.cpp",
+  "output": "CMakeFiles\\QtProject.dir\\Release\\splashScreen.cpp.obj"
+},
+{
+  "directory": "D:/Uni/Sem 3/DSA/Project/build",
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I\"D:/Uni/Sem 3/DSA/Project/build\" -I\"D:/Uni/Sem 3/DSA/Project/AutoSense\" -I\"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_RelWithDebInfo\" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -O2 -g -DNDEBUG -std=gnu++17 -o CMakeFiles\\QtProject.dir\\RelWithDebInfo\\QtProject_autogen\\mocs_compilation_RelWithDebInfo.cpp.obj -c \"D:\\Uni\\Sem 3\\DSA\\Project\\build\\QtProject_autogen\\mocs_compilation_RelWithDebInfo.cpp\"",
   "file": "D:\\Uni\\Sem 3\\DSA\\Project\\build\\QtProject_autogen\\mocs_compilation_RelWithDebInfo.cpp",
   "output": "CMakeFiles\\QtProject.dir\\RelWithDebInfo\\QtProject_autogen\\mocs_compilation_RelWithDebInfo.cpp.obj"
@@ -88,5 +100,11 @@
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I\"D:/Uni/Sem 3/DSA/Project/build\" -I\"D:/Uni/Sem 3/DSA/Project/AutoSense\" -I\"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_RelWithDebInfo\" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -O2 -g -DNDEBUG -std=gnu++17 -o CMakeFiles\\QtProject.dir\\RelWithDebInfo\\trie.cpp.obj -c \"D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\trie.cpp\"",
   "file": "D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\trie.cpp",
   "output": "CMakeFiles\\QtProject.dir\\RelWithDebInfo\\trie.cpp.obj"
+},
+{
+  "directory": "D:/Uni/Sem 3/DSA/Project/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I\"D:/Uni/Sem 3/DSA/Project/build\" -I\"D:/Uni/Sem 3/DSA/Project/AutoSense\" -I\"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_RelWithDebInfo\" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -O2 -g -DNDEBUG -std=gnu++17 -o CMakeFiles\\QtProject.dir\\RelWithDebInfo\\splashScreen.cpp.obj -c \"D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\splashScreen.cpp\"",
+  "file": "D:\\Uni\\Sem 3\\DSA\\Project\\AutoSense\\splashScreen.cpp",
+  "output": "CMakeFiles\\QtProject.dir\\RelWithDebInfo\\splashScreen.cpp.obj"
 }
 ]

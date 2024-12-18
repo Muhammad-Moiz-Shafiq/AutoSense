@@ -7,6 +7,7 @@
 #include <QListWidget>
 #include <QLabel>
 #include <QPushButton>
+#include <QString>
 #include "trie.h"
 #include "fileHandling.h"
 

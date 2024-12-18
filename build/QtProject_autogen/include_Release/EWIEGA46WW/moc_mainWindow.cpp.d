@@ -1,5 +1,6 @@
 D:/Uni/Sem\ 3/DSA/Project/build/QtProject_autogen/include_Release/EWIEGA46WW/moc_mainWindow.cpp: D:/Uni/Sem\ 3/DSA/Project/AutoSense/mainWindow.h \
   D:/Uni/Sem\ 3/DSA/Project/build/QtProject_autogen/moc_predefs_Release.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/QString \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20memory.h \

@@ -83,6 +83,14 @@ build CMakeFiles/QtProject.dir/RelWithDebInfo/trie.cpp.obj: CXX_COMPILER__QtProj
   OBJECT_DIR = CMakeFiles\QtProject.dir\RelWithDebInfo
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\RelWithDebInfo
 
+build CMakeFiles/QtProject.dir/RelWithDebInfo/splashScreen.cpp.obj: CXX_COMPILER__QtProject_unscanned_RelWithDebInfo D$:/Uni/Sem$ 3/DSA/Project/AutoSense/splashScreen.cpp || cmake_object_order_depends_target_QtProject_RELWITHDEBINFO
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"RelWithDebInfo\"
+  DEP_FILE = CMakeFiles\QtProject.dir\RelWithDebInfo\splashScreen.cpp.obj.d
+  FLAGS = -O2 -g -DNDEBUG -std=gnu++17
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_RelWithDebInfo" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\QtProject.dir\RelWithDebInfo
+  OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\RelWithDebInfo
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target QtProject
@@ -91,7 +99,7 @@ build CMakeFiles/QtProject.dir/RelWithDebInfo/trie.cpp.obj: CXX_COMPILER__QtProj
 #############################################
 # Link the executable RelWithDebInfo\QtProject.exe
 
-build RelWithDebInfo/QtProject.exe: CXX_EXECUTABLE_LINKER__QtProject_RelWithDebInfo CMakeFiles/QtProject.dir/RelWithDebInfo/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/mainWindow.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/main.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/fileHandling.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/trie.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a || QtProject_autogen$:RelWithDebInfo QtProject_autogen_timestamp_deps$:RelWithDebInfo
+build RelWithDebInfo/QtProject.exe: CXX_EXECUTABLE_LINKER__QtProject_RelWithDebInfo CMakeFiles/QtProject.dir/RelWithDebInfo/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/mainWindow.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/main.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/fileHandling.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/trie.cpp.obj CMakeFiles/QtProject.dir/RelWithDebInfo/splashScreen.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a || QtProject_autogen$:RelWithDebInfo QtProject_autogen_timestamp_deps$:RelWithDebInfo
   FLAGS = -O2 -g -DNDEBUG
   LINK_LIBRARIES = C:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QtProject.dir\RelWithDebInfo

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/QtProject.exe"
+			"path" : "Release/QtProject.exe"
 		},
 		{
-			"path" : "Debug/QtProject.pdb"
+			"path" : "Release/QtProject.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -176,7 +176,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++17"
 				}
 			],
 			"defines" : 
@@ -192,6 +192,10 @@
 				{
 					"backtrace" : 2,
 					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 2,
@@ -232,7 +236,7 @@
 				},
 				{
 					"backtrace" : 0,
-					"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug"
+					"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Release"
 				},
 				{
 					"backtrace" : 2,
@@ -276,18 +280,19 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "QtProject_autogen::@6890427a1f51a3e7e1df"
+			"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "QtProject_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "QtProject::@6890427a1f51a3e7e1df",
@@ -296,7 +301,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -372,21 +377,22 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				5
+				6
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				6
+				7
 			]
 		}
 	],
@@ -396,7 +402,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp",
+			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -421,6 +427,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "trie.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "splashScreen.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
