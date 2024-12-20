@@ -1,4 +1,5 @@
 #include "mainWindow.h"
+#include "analysisWindow.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -85,7 +86,7 @@ void MainWindow::onTextChanged(const QString &text) {
 
         if (reply == QMessageBox::Yes) {
             trie.insert(currentWord.toStdString());
-            appendWordToFile(currentWord.toStdString(), "dictionary.txt");
+            appendWordToFile(currentWord.toStdString(), "D:/Uni/Sem 3/DSA/Project/AutoSense/assets/dictionary.txt");
             QMessageBox::information(this, "Word Added", "Word added successfully!");
         }
     } else {
@@ -110,7 +111,8 @@ void MainWindow::onSuggestionClicked(QListWidgetItem *item) {
 }
 
 void MainWindow::onAnalyzeClicked() {
-   // Open a new window or page for further functionality
-        QMessageBox::information(this, "Analyze", "Analyze button clicked!");
-        // Replace this with your new window logic
+   QString text = inputField->text();
+   AnalysisWindow* analysisWindow = new AnalysisWindow(text);
+   analysisWindow->show();
+   this->close();
 }

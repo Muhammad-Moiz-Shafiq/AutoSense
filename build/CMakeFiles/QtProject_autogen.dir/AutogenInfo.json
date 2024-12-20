@@ -225,13 +225,38 @@
 		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake",
 		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/FindCURL.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/FindPackageMessage.cmake",
+		"C:/vcpkg/installed/x64-windows/share/curl/CURLConfigVersion.cmake",
+		"C:/vcpkg/installed/x64-windows/share/curl/CURLConfig.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/FindZLIB.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/FindPackageMessage.cmake",
+		"C:/vcpkg/installed/x64-windows/share/curl/CURLTargets.cmake",
+		"C:/vcpkg/installed/x64-windows/share/curl/CURLTargets-debug.cmake",
+		"C:/vcpkg/installed/x64-windows/share/curl/CURLTargets-release.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/Uni/Sem 3/DSA/Project/AutoSense",
 	"DEP_FILE" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "QtProject_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h",
+			"Mu",
+			"EWIEGA46WW/moc_analysisWindow.cpp",
+			null
+		],
+		[
+			"D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h",
+			"Mu",
+			"EWIEGA46WW/moc_apiHandler.cpp",
+			null
+		],
 		[
 			"D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.h",
 			"Mu",
@@ -304,6 +329,7 @@
 	[
 		"D:/Uni/Sem 3/DSA/Project/build",
 		"D:/Uni/Sem 3/DSA/Project/AutoSense",
+		"C:/vcpkg/installed/x64-windows/include",
 		"C:/Qt/6.8.1/mingw_64/include/QtWidgets",
 		"C:/Qt/6.8.1/mingw_64/include",
 		"C:/Qt/6.8.1/mingw_64/include/QtCore",
@@ -357,6 +383,8 @@
 	"SETTINGS_FILE_Release" : "D:/Uni/Sem 3/DSA/Project/build/CMakeFiles/QtProject_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
+		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.cpp", "Mu", null ],
+		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.cpp", "Mu", null ],
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.cpp", "Mu", null ],
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/main.cpp", "Mu", null ],
 		[ "D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.cpp", "Mu", null ],

@@ -47,7 +47,7 @@ build CMakeFiles/QtProject.dir/Debug/QtProject_autogen/mocs_compilation_Debug.cp
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
   DEP_FILE = CMakeFiles\QtProject.dir\Debug\QtProject_autogen\mocs_compilation_Debug.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug\QtProject_autogen
 
@@ -55,7 +55,7 @@ build CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj: CXX_COMPILER__QtProject
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
   DEP_FILE = CMakeFiles\QtProject.dir\Debug\mainWindow.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
 
@@ -63,7 +63,7 @@ build CMakeFiles/QtProject.dir/Debug/main.cpp.obj: CXX_COMPILER__QtProject_unsca
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
   DEP_FILE = CMakeFiles\QtProject.dir\Debug\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
 
@@ -71,7 +71,7 @@ build CMakeFiles/QtProject.dir/Debug/fileHandling.cpp.obj: CXX_COMPILER__QtProje
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
   DEP_FILE = CMakeFiles\QtProject.dir\Debug\fileHandling.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
 
@@ -79,7 +79,7 @@ build CMakeFiles/QtProject.dir/Debug/trie.cpp.obj: CXX_COMPILER__QtProject_unsca
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
   DEP_FILE = CMakeFiles\QtProject.dir\Debug\trie.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
 
@@ -87,7 +87,23 @@ build CMakeFiles/QtProject.dir/Debug/splashScreen.cpp.obj: CXX_COMPILER__QtProje
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
   DEP_FILE = CMakeFiles\QtProject.dir\Debug\splashScreen.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
+  OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
+
+build CMakeFiles/QtProject.dir/Debug/apiHandler.cpp.obj: CXX_COMPILER__QtProject_unscanned_Debug D$:/Uni/Sem$ 3/DSA/Project/AutoSense/apiHandler.cpp || cmake_object_order_depends_target_QtProject_DEBUG
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
+  DEP_FILE = CMakeFiles\QtProject.dir\Debug\apiHandler.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
+  OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
+
+build CMakeFiles/QtProject.dir/Debug/analysisWindow.cpp.obj: CXX_COMPILER__QtProject_unscanned_Debug D$:/Uni/Sem$ 3/DSA/Project/AutoSense/analysisWindow.cpp || cmake_object_order_depends_target_QtProject_DEBUG
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -DCMAKE_INTDIR=\"Debug\"
+  DEP_FILE = CMakeFiles\QtProject.dir\Debug\analysisWindow.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"D:/Uni/Sem 3/DSA/Project/build" -I"D:/Uni/Sem 3/DSA/Project/AutoSense" -I"D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug" -isystem C:/vcpkg/installed/x64-windows/include -isystem C:/Qt/6.8.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir\Debug
 
@@ -99,9 +115,9 @@ build CMakeFiles/QtProject.dir/Debug/splashScreen.cpp.obj: CXX_COMPILER__QtProje
 #############################################
 # Link the executable Debug\QtProject.exe
 
-build Debug/QtProject.exe: CXX_EXECUTABLE_LINKER__QtProject_Debug CMakeFiles/QtProject.dir/Debug/QtProject_autogen/mocs_compilation_Debug.cpp.obj CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj CMakeFiles/QtProject.dir/Debug/main.cpp.obj CMakeFiles/QtProject.dir/Debug/fileHandling.cpp.obj CMakeFiles/QtProject.dir/Debug/trie.cpp.obj CMakeFiles/QtProject.dir/Debug/splashScreen.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a || QtProject_autogen$:Debug QtProject_autogen_timestamp_deps$:Debug
+build Debug/QtProject.exe: CXX_EXECUTABLE_LINKER__QtProject_Debug CMakeFiles/QtProject.dir/Debug/QtProject_autogen/mocs_compilation_Debug.cpp.obj CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj CMakeFiles/QtProject.dir/Debug/main.cpp.obj CMakeFiles/QtProject.dir/Debug/fileHandling.cpp.obj CMakeFiles/QtProject.dir/Debug/trie.cpp.obj CMakeFiles/QtProject.dir/Debug/splashScreen.cpp.obj CMakeFiles/QtProject.dir/Debug/apiHandler.cpp.obj CMakeFiles/QtProject.dir/Debug/analysisWindow.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a C$:/vcpkg/installed/x64-windows/debug/lib/libcurl-d.lib || QtProject_autogen$:Debug QtProject_autogen_timestamp_deps$:Debug
   FLAGS = -g
-  LINK_LIBRARIES = C:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  C:/vcpkg/installed/x64-windows/debug/lib/libcurl-d.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QtProject.dir\Debug
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -135,7 +151,7 @@ build QtProject_autogen/timestamp QtProject_autogen/mocs_compilation_Debug.cpp Q
 #############################################
 # Phony custom command for CMakeFiles\QtProject_autogen_timestamp_deps-Debug
 
-build CMakeFiles/QtProject_autogen_timestamp_deps-Debug | ${cmake_ninja_workdir}CMakeFiles/QtProject_autogen_timestamp_deps-Debug: phony C$:/Qt/6.8.1/mingw_64/bin/moc.exe C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/QtProject_autogen_timestamp_deps-Debug | ${cmake_ninja_workdir}CMakeFiles/QtProject_autogen_timestamp_deps-Debug: phony C$:/Qt/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.1/mingw_64/bin/moc.exe
 
 
 #############################################
