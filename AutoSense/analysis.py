@@ -5,115 +5,157 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from collections import defaultdict
 import math
-from sklearn.model_selection import train_test_split
-import base64
-from io import BytesIO 
+import json
+import os
 
-# Download required NLTK packages for the first time only
-#nltk.download('punkt')
-#nltk.download('stopwords')
+class SentimentAnalyzer:
+    def __init__(self, csv_file_path):
+        self.original_df = pd.read_csv(csv_file_path)
+        self.df = self.original_df.copy()
+        
+        # Check if 'selected_text' column exists before dropping
+        if 'selected_text' in self.df.columns:
+            self.df = self.df.drop(columns=['selected_text'])
+        
+        self.df["text"] = self.df["text"].astype(str)
+        
+        # Load or initialize feedback dictionary
+        self.feedback_file = 'feedback_memory.json'
+        self.feedback_memory = self.load_feedback_memory()
+        
+        self.negation_words = {'not', 'no', 'never', "n't", 'cannot', 'cant', "won't", 'wont'}
+        self.initialize_model()
+    
+    def load_feedback_memory(self):
+        if os.path.exists(self.feedback_file):
+            with open(self.feedback_file, 'r') as f:
+                return json.load(f)
+        return {}
+    
+    def save_feedback_memory(self):
+        with open(self.feedback_file, 'w') as f:
+            json.dump(self.feedback_memory, f)
 
-# Load the dataset
-csv_file_path = 'D:/Uni/Sem 3/DSA/Project/AutoSense/assets/data/train.csv'
-df = pd.read_csv(csv_file_path)
-df = df.drop(columns=['selected_text'])
-df["text"] = df["text"].astype(str)
-# Preprocessing function
-def preprocess_tweet(tweet):
-    tweet = tweet.lower()
-    tweet = tweet.translate(str.maketrans("", "", string.punctuation))
-    tokens = tweet.split()
-    stemmer = PorterStemmer()
-    stopwords_set = set(stopwords.words("english"))
-    tokens = [stemmer.stem(token) for token in tokens if token not in stopwords_set]
-    return tokens
-
-# Step 1: Split data by sentiment
-def split_data_by_sentiment(data, sentiment):
-    return data[data['sentiment'] == sentiment]['text'].tolist()
-
-positive_tweets = split_data_by_sentiment(df, 'positive')
-negative_tweets = split_data_by_sentiment(df, 'negative')
-neutral_tweets = split_data_by_sentiment(df, 'neutral')
-
-# Split the data into train and test sets
-train_df, test_df = train_test_split(df, test_size=0.1, random_state=42)
-
-# Step 2: Calculate word counts for a given sentiment
-def calculate_word_counts(tweets):
-    word_count = defaultdict(int)
-    for tweet in tweets:
-        tokens = preprocess_tweet(tweet)
+    def preprocess_tweet(self, tweet):
+        """Preprocess tweet with negation handling"""
+        tweet = tweet.lower().strip()
+        tweet = tweet.translate(str.maketrans("", "", string.punctuation))
+        
+        # Check if this exact text has feedback
+        if tweet in self.feedback_memory:
+            return ['EXACT_MATCH']
+        
+        tokens = tweet.split()
+        
+        # Remove stopwords except negation words
+        stopwords_set = set(stopwords.words("english")) - self.negation_words
+        tokens = [token for token in tokens if token not in stopwords_set]
+        
+        # Handle negations
+        processed_tokens = []
+        negate = False
+        
         for token in tokens:
-            word_count[token] += 1
-    return word_count
+            if token in self.negation_words:
+                negate = True
+                continue
+            
+            if negate:
+                processed_tokens.append(f"NOT_{token}")
+                negate = False
+            else:
+                processed_tokens.append(token)
+        
+        # Stem the tokens
+        stemmer = PorterStemmer()
+        processed_tokens = [stemmer.stem(token) for token in processed_tokens]
+        
+        return processed_tokens
 
-word_count_positive = calculate_word_counts(train_df[train_df['sentiment'] == 'positive']['text'])
-word_count_negative = calculate_word_counts(train_df[train_df['sentiment'] == 'negative']['text'])
-word_count_neutral = calculate_word_counts(train_df[train_df['sentiment'] == 'neutral']['text'])
+    def initialize_model(self):
+        self.sentiment_data = {
+            'positive': defaultdict(int),
+            'negative': defaultdict(int),
+            'neutral': defaultdict(int)
+        }
+        
+        # Process the original dataset
+        for _, row in self.df.iterrows():
+            tokens = self.preprocess_tweet(row['text'])
+            sentiment = row['sentiment']
+            for token in tokens:
+                self.sentiment_data[sentiment][token] += 1
+        
+        # Calculate totals
+        self.totals = {
+            sentiment: sum(counts.values())
+            for sentiment, counts in self.sentiment_data.items()
+        }
 
-# Display word counts
-print("Word Counts - Positive Sentiment:")
-print(word_count_positive)
+    def classify_text(self, text):
+        # Normalize the input text
+        text = text.lower().strip()
+        
+        # Check feedback memory first
+        if text in self.feedback_memory:
+            remembered_sentiment = self.feedback_memory[text]
+            # Create artificial scores to strongly favor the remembered sentiment
+            scores = {
+                'positive': -100.0,
+                'negative': -100.0,
+                'neutral': -100.0
+            }
+            scores[remembered_sentiment] = 0.0
+            return remembered_sentiment, scores
+        
+        # If no exact match, proceed with normal classification
+        tokens = self.preprocess_tweet(text)
+        scores = {
+            'positive': math.log(len(self.df[self.df['sentiment'] == 'positive']) / len(self.df)),
+            'negative': math.log(len(self.df[self.df['sentiment'] == 'negative']) / len(self.df)),
+            'neutral': math.log(len(self.df[self.df['sentiment'] == 'neutral']) / len(self.df))
+        }
+        
+        for sentiment in ['positive', 'negative', 'neutral']:
+            for token in tokens:
+                count = self.sentiment_data[sentiment][token]
+                # Add smoothing
+                probability = (count + 0.1) / (self.totals[sentiment] + 0.1 * len(self.sentiment_data[sentiment]))
+                scores[sentiment] += math.log(probability)
+        
+        predicted_sentiment = max(scores, key=scores.get)
+        return predicted_sentiment, scores
 
-print("\nWord Counts - Negative Sentiment:")
-print(word_count_negative)
-
-print("\nWord Counts - Neutral Sentiment:")
-print(word_count_neutral)
-
-# Step 3: Calculate likelihood using Laplacian smoothing
-def calculate_likelihood(word_count, total_words, laplacian_smoothing=1):
-    likelihood = {}
-    vocabulary_size = len(word_count)
-
-    for word, count in word_count.items():
-        likelihood[word] = (count + laplacian_smoothing) / (total_words + laplacian_smoothing * vocabulary_size)
-
-    return likelihood
-
-total_positive_words = sum(word_count_positive.values())
-total_negative_words = sum(word_count_negative.values())
-total_neutral_words = sum(word_count_neutral.values())
-
-likelihood_positive = calculate_likelihood(word_count_positive, total_positive_words)
-likelihood_negative = calculate_likelihood(word_count_negative, total_negative_words)
-likelihood_neutral = calculate_likelihood(word_count_neutral, total_neutral_words)
-
-# Step 4: Calculate log likelihood
-log_likelihood_positive = {word: math.log(prob) for word, prob in likelihood_positive.items()}
-log_likelihood_negative = {word: math.log(prob) for word, prob in likelihood_negative.items()}
-log_likelihood_neutral = {word: math.log(prob) for word, prob in likelihood_neutral.items()}
-
-# Step 5: Calculate log prior
-def calculate_log_prior(sentiment, data):
-    return math.log(len(data[data['sentiment'] == sentiment]) / len(data))
-
-log_prior_positive = calculate_log_prior('positive', df)
-log_prior_negative = calculate_log_prior('negative', df)
-log_prior_neutral = calculate_log_prior('neutral', df)
-
-# Step 6: Classify a new tweet
-def classify_tweet_with_scores(tweet, log_likelihood_positive, log_likelihood_negative, log_likelihood_neutral,
-                   log_prior_positive, log_prior_negative, log_prior_neutral):
-    tokens = preprocess_tweet(tweet)
-
-    log_score_positive = log_prior_positive + sum([log_likelihood_positive.get(token, 0) for token in tokens])
-    log_score_negative = log_prior_negative + sum([log_likelihood_negative.get(token, 0) for token in tokens])
-    log_score_neutral = log_prior_neutral + sum([log_likelihood_neutral.get(token, 0) for token in tokens])
-
-    sentiment_scores = {
-        'positive': log_score_positive,
-        'negative': log_score_negative,
-        'neutral': log_score_neutral
-    }
-
-    predicted_sentiment = max(sentiment_scores, key=sentiment_scores.get)
-    return predicted_sentiment, sentiment_scores
+    def add_feedback(self, text, correct_sentiment):
+        # Normalize the text
+        text = text.lower().strip()
+        
+        # Store the exact text and sentiment in feedback memory
+        self.feedback_memory[text] = correct_sentiment
+        
+        # Save the updated feedback memory
+        self.save_feedback_memory()
+        
+        # Add to training data
+        new_row = {
+            'textID': f'feedback_{len(self.df)}',
+            'text': text,
+            'sentiment': correct_sentiment,
+        }
+        self.df = pd.concat([self.df, pd.DataFrame([new_row])], ignore_index=True)
+        
+        # Update the model
+        tokens = self.preprocess_tweet(text)
+        for token in tokens:
+            self.sentiment_data[correct_sentiment][token] += 5  # Give extra weight to feedback
+        self.totals[correct_sentiment] = sum(self.sentiment_data[correct_sentiment].values())
+        
+        return len(self.df)
 
 def main():
-    # Get input from user through CLI
+    analyzer = SentimentAnalyzer('./data/train.csv')
     print("\n=== Sentiment Analysis with Naïve Bayes ===\n")
+    
     while True:
         user_input = input("\nEnter text to analyze (or 'quit' to exit): ")
         
@@ -121,20 +163,26 @@ def main():
             print("\nGoodbye!")
             break
             
-        predicted_sentiment, sentiment_scores = classify_tweet_with_scores(
-            user_input, 
-            log_likelihood_positive, 
-            log_likelihood_negative, 
-            log_likelihood_neutral,
-            log_prior_positive, 
-            log_prior_negative, 
-            log_prior_neutral
-        )
+        predicted_sentiment, sentiment_scores = analyzer.classify_text(user_input)
         
         print(f"\nPredicted Sentiment: {predicted_sentiment.upper()}")
         print("\nSentiment Scores:")
         for sentiment, score in sentiment_scores.items():
             print(f"{sentiment}: {score:.4f}")
+            
+        is_correct = input("\nWas this analysis correct? (y/n): ").lower()
+        while is_correct not in ['y', 'n']:
+            print("Please enter 'y' for yes or 'n' for no.")
+            is_correct = input("Was this analysis correct? (y/n): ").lower()
+        
+        if is_correct == 'n':
+            correct_sentiment = input("\nWhat is the correct sentiment? (positive/negative/neutral): ").lower()
+            while correct_sentiment not in ['positive', 'negative', 'neutral']:
+                print("Invalid sentiment. Please choose positive, negative, or neutral.")
+                correct_sentiment = input("What is the correct sentiment? ").lower()
+                
+            total_rows = analyzer.add_feedback(user_input, correct_sentiment)
+            print(f"Model retrained with new feedback! Dataset now has {total_rows} rows.")
 
 if __name__ == "__main__":
     main()
