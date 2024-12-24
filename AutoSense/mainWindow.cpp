@@ -111,8 +111,18 @@ void MainWindow::onSuggestionClicked(QListWidgetItem *item) {
 }
 
 void MainWindow::onAnalyzeClicked() {
-   QString text = inputField->text();
-   AnalysisWindow* analysisWindow = new AnalysisWindow(text);
-   analysisWindow->show();
-   this->close();
+    QString text = inputField->text();
+    AnalysisWindow* analysisWindow = new AnalysisWindow(text);
+    
+    // Connect the custom signal to the slot
+    connect(analysisWindow, &AnalysisWindow::analysisWindowClosed, this, &MainWindow::onAnalysisWindowClosed);
+    
+    cout << "Opening AnalysisWindow" << endl;  // Debugging statement
+    analysisWindow->show();
+    this->hide();  // Hide the main window
+}
+
+void MainWindow::onAnalysisWindowClosed() {
+    cout << "Analysis window closed" << endl;  // Debugging statement
+    this->show();  // Show the main window again when AnalysisWindow is closed
 }

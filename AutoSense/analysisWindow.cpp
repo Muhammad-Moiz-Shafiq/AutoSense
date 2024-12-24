@@ -2,6 +2,10 @@
 #include "apiHandler.h"
 #include <QJsonObject>
 #include <QJsonValue>
+#include <QInputDialog>
+#include <QMessageBox>
+#include <QJsonDocument>
+
 AnalysisWindow::AnalysisWindow(const QString& textToAnalyze, QWidget *parent)
    : QMainWindow(parent)
 {
@@ -13,7 +17,8 @@ void AnalysisWindow::setupUI() {
    // Set window properties
    setWindowTitle("Analysis Results");
    resize(600, 600);
-    // Create central widget and layout
+   
+   // Create central widget and layout
    centralWidget = new QWidget(this);
    layout = new QVBoxLayout(centralWidget);
    
@@ -21,16 +26,49 @@ void AnalysisWindow::setupUI() {
    resultLabel = new QLabel("Analyzing...", this);
    resultLabel->setAlignment(Qt::AlignCenter);
    
+   // Create input field for feedback
+   feedbackInput = new QLineEdit(this);
+   feedbackInput->setPlaceholderText("Is the analysis correct? (yes/no)");
+   
+   // Create submit button
+   submitButton = new QPushButton("Submit Feedback", this);
+   connect(submitButton, &QPushButton::clicked, this, &AnalysisWindow::submitFeedback);
+   
    // Add widgets to layout
    layout->addWidget(resultLabel);
+   layout->addWidget(feedbackInput);
+   layout->addWidget(submitButton);
    
    // Set central widget
    setCentralWidget(centralWidget);
-    // Apply styling
+   
+   // Apply styling
    this->setStyleSheet(
        "QMainWindow {"
        "    background-color:rgb(37, 33, 33);"
        "}"
+       "QLineEdit {"
+        "    border: 1px solid #ccc;"
+        "    border-radius: 8px;"
+        "    padding: 10px;"
+        "    margin: 10px 30px;"
+        "    background-color: rgb(58, 59, 61);"
+        "    font-size: 18px;"
+        "    color: white;"
+        "}"
+        "QPushButton {"
+        "    background-color:rgb(58, 59, 61);"
+        "    color: white;"
+        "    border: none;"
+        "    margin: 10px 30px;"
+        "    font-size: 18px;"
+        "    padding: 10px 20px;"
+        "    border-radius: 8px;"
+        "}"
+        "QPushButton:hover {"
+        "    background-color:rgb(92, 127, 163);"
+        "    font-style:italic;"
+        "}"
        "QLabel {"
        "    color: rgb(162, 230, 252);"
        "    font-size: 18px;"
@@ -48,7 +86,9 @@ void AnalysisWindow::performAnalysis(const QString& text) {
            this, &AnalysisWindow::handleAnalysisResult);
    connect(apiHandler, &ApiHandler::errorOccurred, 
            this, &AnalysisWindow::handleError);
-   
+   connect(apiHandler, &ApiHandler::feedbackSent, 
+           this, &AnalysisWindow::handleFeedbackResponse);  // Connect feedbackSent signal
+
    // Start analysis
    apiHandler->analyzeSentiment(text);
 }
@@ -69,8 +109,46 @@ void AnalysisWindow::handleAnalysisResult(const QJsonObject& result) {
     .arg(scores["positive"].toDouble(), 0, 'f', 4)
     .arg(scores["negative"].toDouble(), 0, 'f', 4)
     .arg(scores["neutral"].toDouble(), 0, 'f', 4);
+    
     resultLabel->setText(resultText);
 }
+
+void AnalysisWindow::submitFeedback() {
+    QString feedback = feedbackInput->text().trimmed();
+    
+    if (feedback.isEmpty() || (feedback.toLower() != "yes" && feedback.toLower() != "no")) {
+        QMessageBox::warning(this, "Input Error", "Please provide correct feedback.");
+        return;
+    }
+
+    // Check if feedback is correct
+    if (feedback.toLower() == "yes") {
+        QMessageBox::information(this, "Thank You", "Thank you for your feedback!");
+        emit analysisWindowClosed();  // Emit the custom signal
+        this->close();  // Close the analysis window and return to main window
+    } else {
+        // Prompt for correct sentiment
+        QStringList sentiments = {"positive", "negative", "neutral"};
+        bool ok;
+        QString correctSentiment = QInputDialog::getItem(this, "Select Correct Sentiment",
+                                                         "What is the correct sentiment?",
+                                                         sentiments, 0, false, &ok);
+        if (ok && !correctSentiment.isEmpty()) {
+            QJsonObject feedbackJson;
+            feedbackJson["text"] = feedbackInput->text();  // Use the original text
+            feedbackJson["correct_sentiment"] = correctSentiment;
+            apiHandler->sendFeedback(feedbackJson);
+        }
+    }
+}
+
 void AnalysisWindow::handleError(const QString& error) {
    resultLabel->setText("Error: " + error);
+}
+
+void AnalysisWindow::handleFeedbackResponse(const QString& response) {
+    QMessageBox::information(this, "Feedback Sent", "Your feedback has been recorded.");
+    std::cout << "Emitting analysisWindowClosed signal" << std::endl;  // Debugging statement
+    emit analysisWindowClosed();  // Emit the custom signal
+    this->close();  // Close the analysis window after feedback is sent
 }

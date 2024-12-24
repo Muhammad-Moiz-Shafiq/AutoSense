@@ -150,6 +150,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qkeysequence.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qpaintdevice.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qpalette.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qpixelformat.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qpixmap.h
@@ -157,7 +158,10 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qregion.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qrgb.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qrgba64.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtextcursor.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtextformat.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtextoption.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtgui-config.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtguiexports.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qtguiglobal.h
@@ -165,15 +169,20 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLineEdit
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMainWindow
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlineedit.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qmainwindow.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtwidgets-config.h
@@ -193,6 +202,8 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h
@@ -214,9 +225,12 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h
@@ -224,6 +238,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h
@@ -285,6 +300,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception
@@ -297,7 +313,10 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list
@@ -306,6 +325,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/optional
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h
@@ -341,6 +361,8 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h
+ mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h
@@ -386,6 +408,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+ mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h
 D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h
  mmc:Q_OBJECT
@@ -723,10 +746,13 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
 D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.h
+D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.cpp
 D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mmc:Q_OBJECT
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/moc_predefs_Release.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QJsonObject
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QString
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/q20iterator.h
@@ -748,6 +774,9 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qcalendar.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qcborcommon.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qcborvalue.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qchar.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qcompare.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qcompare_impl.h
@@ -761,6 +790,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qcontiguouscache.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qdebug.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qendian.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qexceptionhandling.h
@@ -779,6 +809,8 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qitemselectionmodel.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qiterable.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qiterator.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qjsonobject.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qjsonvalue.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qline.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qlist.h
@@ -849,6 +881,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtypes.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qurl.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qutf8stringview.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/quuid.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qvariant.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qversiontagging.h
@@ -1146,9 +1179,10 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/trie.h
+ mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.h
+ mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/trie.h
-D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.cpp
 D:/Uni/Sem 3/DSA/Project/AutoSense/splashScreen.h
 D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.cpp
 D:/Uni/Sem 3/DSA/Project/AutoSense/trie.h

@@ -10,6 +10,7 @@
 #include <QString>
 #include "trie.h"
 #include "fileHandling.h"
+#include "analysisWindow.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -21,6 +22,7 @@ private slots:
     void onTextChanged(const QString &text);
     void onSuggestionClicked(QListWidgetItem *item);
     void onAnalyzeClicked();
+    void onAnalysisWindowClosed();
 
 private:
     QLineEdit *inputField;
