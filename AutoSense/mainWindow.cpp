@@ -77,22 +77,41 @@ void MainWindow::onTextChanged(const QString &text) {
     QStringList words = text.split(' ', Qt::SkipEmptyParts);
     QString currentWord = words.isEmpty() ? "" : words.last();
 
+    // Display suggestions for the current word while typing
     std::vector<std::string> suggestions = trie.autocomplete(currentWord.toStdString());
-    if (suggestions.empty() && !currentWord.isEmpty()) {
-        // Prompt to add word if no suggestions found
-        QMessageBox::StandardButton reply = QMessageBox::question(this, 
-            "Add Word", "No suggestions found. Add to dictionary?", 
-            QMessageBox::Yes | QMessageBox::No);
-
-        if (reply == QMessageBox::Yes) {
-            trie.insert(currentWord.toStdString());
-            appendWordToFile(currentWord.toStdString(), "D:/Uni/Sem 3/DSA/Project/AutoSense/assets/dictionary.txt");
-            QMessageBox::information(this, "Word Added", "Word added successfully!");
-        }
-    } else {
+    if (!suggestions.empty()) {
         // Display suggestions
         for (const auto &word : suggestions) {
             suggestionBox->addItem(QString::fromStdString(word));
+        }
+    }
+
+    // Check if the last character is a space
+    if (text.endsWith(' ')) {
+        // If the last word has no suggestions, prompt to add it to the dictionary
+        if (words.size() > 1) { // Ensure there is a previous word
+            QString previousWord = words[words.size() - 1]; // Get the previous word
+            
+            // Remove trailing punctuation
+            previousWord = previousWord.trimmed();
+            if (previousWord.endsWith(QChar::fromLatin1('.')) || previousWord.endsWith(QChar::fromLatin1(',')) ||
+                previousWord.endsWith(QChar::fromLatin1('!')) || previousWord.endsWith(QChar::fromLatin1('?')) || previousWord.endsWith(QChar::fromLatin1(';')) || previousWord.endsWith(QChar::fromLatin1(':'))) {
+                previousWord.chop(1); // Remove the last character (punctuation)
+            }
+
+            std::vector<std::string> previousSuggestions = trie.autocomplete(previousWord.toStdString());
+            if (previousSuggestions.empty() && !previousWord.isEmpty()) {
+                // Prompt to add word if no suggestions found
+                QMessageBox::StandardButton reply = QMessageBox::question(this, 
+                    "Add Word", "No suggestions found for '" + previousWord + "'. Do you want to add it to the dictionary?", 
+                    QMessageBox::Yes | QMessageBox::No);
+
+                if (reply == QMessageBox::Yes) {
+                    trie.insert(previousWord.toStdString());
+                    appendWordToFile(previousWord.toStdString(), "D:/Uni/Sem 3/DSA/Project/AutoSense/assets/dictionary.txt");
+                    QMessageBox::information(this, "Word Added", "Word added successfully!");
+                }
+            }
         }
     }
 }
@@ -117,12 +136,12 @@ void MainWindow::onAnalyzeClicked() {
     // Connect the custom signal to the slot
     connect(analysisWindow, &AnalysisWindow::analysisWindowClosed, this, &MainWindow::onAnalysisWindowClosed);
     
-    cout << "Opening AnalysisWindow" << endl;  // Debugging statement
+    //cout << "Opening AnalysisWindow" << endl;  // Debugging statement
     analysisWindow->show();
     this->hide();  // Hide the main window
 }
 
 void MainWindow::onAnalysisWindowClosed() {
-    cout << "Analysis window closed" << endl;  // Debugging statement
+    //cout << "Analysis window closed" << endl;  // Debugging statement
     this->show();  // Show the main window again when AnalysisWindow is closed
 }

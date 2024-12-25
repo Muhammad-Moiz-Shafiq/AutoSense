@@ -13,7 +13,7 @@ void loadDictionary(Trie& trie, const string& filename) {
         trie.insert(word);
     }
     file.close();
-    cout << "Dictionary loaded successfully.\n";
+    //cout << "Dictionary loaded successfully.\n";
 }
 // Function to append a word to the dictionary file
 void appendWordToFile(const string& word, const string& filename) {
@@ -22,6 +22,6 @@ void appendWordToFile(const string& word, const string& filename) {
         cerr << "Error: Unable to open " << filename << " for writing.\n";
         return;
     }
-    file <<"\n" <<word << "\n"; // Write the word to the file
+    file <<"\n" <<word ; // Write the word to the file
     file.close();
 }

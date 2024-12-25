@@ -28,5 +28,6 @@ private:
    ApiHandler* apiHandler;
    QLineEdit* feedbackInput;
    QPushButton* submitButton;
+   QString* inText;
 };
 #endif // ANALYSISWINDOW_H

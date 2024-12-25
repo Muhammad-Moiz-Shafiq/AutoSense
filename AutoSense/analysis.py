@@ -20,7 +20,7 @@ class SentimentAnalyzer:
         self.df["text"] = self.df["text"].astype(str)
         
         # Load or initialize feedback dictionary
-        self.feedback_file = 'feedback_memory.json'
+        self.feedback_file = 'D:/Uni/Sem 3/DSA/Project/AutoSense/feedback_memory.json'
         self.feedback_memory = self.load_feedback_memory()
         
         self.negation_words = {'not', 'no', 'never', "n't", 'cannot', 'cant', "won't", 'wont'}
@@ -153,7 +153,7 @@ class SentimentAnalyzer:
         return len(self.df)
 
 def main():
-    analyzer = SentimentAnalyzer('./data/train.csv')
+    analyzer = SentimentAnalyzer('D:/Uni/Sem 3/DSA/Project/AutoSense/assets/data/train.csv')
     print("\n=== Sentiment Analysis with Naïve Bayes ===\n")
     
     while True:
@@ -181,7 +181,7 @@ def main():
                 print("Invalid sentiment. Please choose positive, negative, or neutral.")
                 correct_sentiment = input("What is the correct sentiment? ").lower()
                 
-            total_rows = analyzer.add_feedback(user_input, correct_sentiment)
+            total_rows= analyzer.add_feedback(user_input, correct_sentiment)
             print(f"Model retrained with new feedback! Dataset now has {total_rows} rows.")
 
 if __name__ == "__main__":

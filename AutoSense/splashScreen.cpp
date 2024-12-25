@@ -12,9 +12,9 @@ SplashScreen::SplashScreen() {
 
     painter.setPen(QColor(0, 0, 0, 160)); // Semi-transparent black for shadow
     painter.setFont(QFont("Times New Roman", 24, QFont::Bold,true));
-    painter.drawText(pixmap.rect().adjusted(2, 2, 2, 2), Qt::AlignCenter, "Analyzing...");
+    painter.drawText(pixmap.rect().adjusted(2, 2, 2, 2), Qt::AlignCenter, "Loading Resources...");
     painter.setPen(QColor(162, 230, 252)); // Light blue for text
-    painter.drawText(pixmap.rect(), Qt::AlignCenter, "Analyzing...");
+    painter.drawText(pixmap.rect(), Qt::AlignCenter, "Loading Resources...");
 
     setPixmap(pixmap);
 }

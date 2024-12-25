@@ -21,6 +21,7 @@ void AnalysisWindow::setupUI() {
    // Create central widget and layout
    centralWidget = new QWidget(this);
    layout = new QVBoxLayout(centralWidget);
+   inText = new QString();
    
    // Create and style the result label
    resultLabel = new QLabel("Analyzing...", this);
@@ -88,7 +89,7 @@ void AnalysisWindow::performAnalysis(const QString& text) {
            this, &AnalysisWindow::handleError);
    connect(apiHandler, &ApiHandler::feedbackSent, 
            this, &AnalysisWindow::handleFeedbackResponse);  // Connect feedbackSent signal
-
+    inText = new QString(text);
    // Start analysis
    apiHandler->analyzeSentiment(text);
 }
@@ -135,7 +136,7 @@ void AnalysisWindow::submitFeedback() {
                                                          sentiments, 0, false, &ok);
         if (ok && !correctSentiment.isEmpty()) {
             QJsonObject feedbackJson;
-            feedbackJson["text"] = feedbackInput->text();  // Use the original text
+            feedbackJson["text"] = *inText;  // Use the original text
             feedbackJson["correct_sentiment"] = correctSentiment;
             apiHandler->sendFeedback(feedbackJson);
         }
@@ -148,7 +149,7 @@ void AnalysisWindow::handleError(const QString& error) {
 
 void AnalysisWindow::handleFeedbackResponse(const QString& response) {
     QMessageBox::information(this, "Feedback Sent", "Your feedback has been recorded.");
-    std::cout << "Emitting analysisWindowClosed signal" << std::endl;  // Debugging statement
+   // std::cout << "Emitting analysisWindowClosed signal" << std::endl;  // Debugging statement
     emit analysisWindowClosed();  // Emit the custom signal
     this->close();  // Close the analysis window after feedback is sent
 }
