@@ -97,11 +97,20 @@ void AnalysisWindow::performAnalysis(const QString& text) {
 void AnalysisWindow::handleAnalysisResult(const QJsonObject& result) {
    QString sentiment = result["predicted_sentiment"].toString();
    QJsonObject scores = result["sentiment_scores"].toObject();
-   
+   if (sentiment == "positive") {
+        sentiment = "POSITIVE 😊";
+       resultLabel->setStyleSheet("color: green;");
+   } else if (sentiment == "negative") {
+         sentiment = "NEGATIVE ☹️";
+       resultLabel->setStyleSheet("color: red;");
+   } else {
+            sentiment = "NEUTRAL 😐";
+       resultLabel->setStyleSheet("color: yellow;");
+   }
    // Format the results
    QString resultText = QString(
        "<h2>Analysis Results</h2>"
-       "<p>Text Sentiment: <b>%1</b></p>"
+       "<p>Text connotation: <b>%1</b></p>"
        "<h3>Sentiment Scores:</h3>"
        "<p>Positive: %2</p>"
        "<p>Negative: %3</p>"

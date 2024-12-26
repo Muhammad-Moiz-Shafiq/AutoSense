@@ -20,10 +20,10 @@ class SentimentAnalyzer:
         self.df["text"] = self.df["text"].astype(str)
         
         # Load or initialize feedback dictionary
-        self.feedback_file = 'D:/Uni/Sem 3/DSA/Project/AutoSense/feedback_memory.json'
+        self.feedback_file = 'D:/Uni/Sem 3/DSA/Project/AutoSense/assets/feedback_memory.json'
         self.feedback_memory = self.load_feedback_memory()
         
-        self.negation_words = {'not', 'no', 'never', "n't", 'cannot', 'cant', "won't", 'wont'}
+        self.negation_words = {'not', 'no', 'never', "n't","isn't", 'cannot', 'cant', "won't","can't" ,'wont'}
         self.initialize_model()
     
     def load_feedback_memory(self):

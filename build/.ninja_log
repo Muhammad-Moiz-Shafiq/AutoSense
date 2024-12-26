@@ -1,78 +1,46 @@
 # ninja log v6
+29	385	7568552126443249	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
 387	3750	7561475593664277	CMakeFiles/QtProject.dir/Debug/TrieDS.cpp.obj	ed82bb9e3006bb12
-25	588	7568422893043614	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-5441	6199	7568422947186118	Debug/QtProject.exe	76b787a7194963d
-25	588	7568422893043614	QtProject_autogen/timestamp	f22e105fa44009ee
-25	588	7568422893043614	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-647	4028	7568216403187316	CMakeFiles/QtProject.dir/Debug/fileHandling.cpp.obj	49cd6e2946cd71ff
-6672	8789	7563444870129244	CMakeFiles/QtProject.dir/Debug/trie.cpp.obj	37a0db77f61ce600
-25	588	7568422893043614	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-653	6802	7568216403241472	CMakeFiles/QtProject.dir/Debug/splashScreen.cpp.obj	fee60486bb25ab85
-25	588	7568422893043614	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
-589	5440	7568422898701127	CMakeFiles/QtProject.dir/Debug/analysisWindow.cpp.obj	84c03caa013493a9
-25	588	7568422893043614	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-25	588	7568422893043614	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-12	2110	7568394790323869	build-RelWithDebInfo.ninja	e115b7f89f423373
-25	588	7568422893043614	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-6057	13060	7568416252945889	CMakeFiles/QtProject.dir/Debug/QtProject_autogen/mocs_compilation_Debug.cpp.obj	b757fde1d583ad97
-6064	13152	7568416252959064	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
-6071	12810	7568416253081842	CMakeFiles/QtProject.dir/Debug/main.cpp.obj	8e0c7c4791506980
-12	2110	7568394790323869	CMakeFiles/impl-Debug.ninja	e115b7f89f423373
-12	2110	7568394790323869	build-Debug.ninja	e115b7f89f423373
-12	2110	7568394790323869	CMakeFiles/impl-Release.ninja	e115b7f89f423373
-12	2110	7568394790323869	build-Release.ninja	e115b7f89f423373
-12	2110	7568394790243713	build.ninja	e115b7f89f423373
-12	2110	7568394790323869	CMakeFiles/impl-RelWithDebInfo.ninja	e115b7f89f423373
-8602	19375	7567544983020096	CMakeFiles/QtProject.dir/Debug/apiHandler.cpp.obj	48835dd118a046fb
-39	664	7568511341106561	QtProject_autogen/timestamp	f22e105fa44009ee
-39	664	7568511341106561	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-39	664	7568511341106561	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-39	664	7568511341106561	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-39	664	7568511341106561	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
-39	664	7568511341106561	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-39	664	7568511341106561	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-39	664	7568511341106561	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-665	6262	7568511347344047	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
-6263	7087	7568511403354625	Debug/QtProject.exe	76b787a7194963d
-25	444	7568515953354494	QtProject_autogen/timestamp	f22e105fa44009ee
-25	444	7568515953354494	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-25	444	7568515953354494	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-25	444	7568515953354494	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-25	444	7568515953354494	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
-25	444	7568515953354494	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-25	444	7568515953354494	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-25	444	7568515953354494	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-445	6021	7568515957678359	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
-6022	6848	7568516013449243	Debug/QtProject.exe	76b787a7194963d
-26	577	7568519327522099	QtProject_autogen/timestamp	f22e105fa44009ee
-26	577	7568519327522099	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-26	577	7568519327522099	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-26	577	7568519327522099	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-26	577	7568519327522099	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
-26	577	7568519327522099	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-26	577	7568519327522099	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-26	577	7568519327522099	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+29	385	7568552126443249	QtProject_autogen/timestamp	f22e105fa44009ee
+29	385	7568552126443249	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
+5046	5804	7568552176525702	Debug/QtProject.exe	76b787a7194963d
 583	1581	7568519333095528	CMakeFiles/QtProject.dir/Debug/fileHandling.cpp.obj	49cd6e2946cd71ff
-577	5889	7568519333043904	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
-5890	6670	7568519386167616	Debug/QtProject.exe	76b787a7194963d
-63	538	7568526966543221	QtProject_autogen/timestamp	f22e105fa44009ee
-63	538	7568526966543221	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-63	538	7568526966543221	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-63	538	7568526966543221	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-63	538	7568526966543221	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
-63	538	7568526966543221	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-63	538	7568526966543221	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-63	538	7568526966543221	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-538	6196	7568526971297159	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
-6197	7127	7568527027870092	Debug/QtProject.exe	76b787a7194963d
-37	863	7568530453311344	QtProject_autogen/timestamp	f22e105fa44009ee
-37	863	7568530453311344	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-37	863	7568530453311344	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-37	863	7568530453311344	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
-37	863	7568530453311344	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
-37	863	7568530453311344	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
-37	863	7568530453311344	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
-37	863	7568530453311344	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+6672	8789	7563444870129244	CMakeFiles/QtProject.dir/Debug/trie.cpp.obj	37a0db77f61ce600
+29	385	7568552126443249	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
 876	9663	7568530461737775	CMakeFiles/QtProject.dir/Debug/analysisWindow.cpp.obj	84c03caa013493a9
-864	11727	7568530461617225	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
-11727	13915	7568530570232169	Debug/QtProject.exe	76b787a7194963d
+29	385	7568552126443249	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
+653	6802	7568216403241472	CMakeFiles/QtProject.dir/Debug/splashScreen.cpp.obj	fee60486bb25ab85
+29	385	7568552126443249	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
+12	2110	7569037471177295	build-RelWithDebInfo.ninja	e115b7f89f423373
+29	385	7568552126443249	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
+29	385	7568552126443249	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+6057	13060	7568416252945889	CMakeFiles/QtProject.dir/Debug/QtProject_autogen/mocs_compilation_Debug.cpp.obj	b757fde1d583ad97
+386	5045	7568552130014376	CMakeFiles/QtProject.dir/Debug/mainWindow.cpp.obj	d5833df210fc5327
+6071	12810	7568416253081842	CMakeFiles/QtProject.dir/Debug/main.cpp.obj	8e0c7c4791506980
+12	2110	7569037471038463	CMakeFiles/impl-Debug.ninja	e115b7f89f423373
+12	2110	7569037471138465	build-Debug.ninja	e115b7f89f423373
+12	2110	7569037471148486	CMakeFiles/impl-Release.ninja	e115b7f89f423373
+12	2110	7569037471018473	build.ninja	e115b7f89f423373
+12	2110	7569037471158523	build-Release.ninja	e115b7f89f423373
+12	2110	7569037471177295	CMakeFiles/impl-RelWithDebInfo.ninja	e115b7f89f423373
+8602	19375	7567544983020096	CMakeFiles/QtProject.dir/Debug/apiHandler.cpp.obj	48835dd118a046fb
+31	535	7569041516308754	QtProject_autogen/timestamp	f22e105fa44009ee
+31	535	7569041516308754	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
+31	535	7569041516308754	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
+31	535	7569041516308754	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+31	535	7569041516308754	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
+31	535	7569041516308754	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
+31	535	7569041516308754	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
+31	535	7569041516308754	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+535	6330	7569041521353175	CMakeFiles/QtProject.dir/Debug/analysisWindow.cpp.obj	84c03caa013493a9
+6330	7470	7569041579160137	Debug/QtProject.exe	76b787a7194963d
+21	317	7569043071837518	QtProject_autogen/timestamp	f22e105fa44009ee
+21	317	7569043071837518	QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
+21	317	7569043071837518	QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
+21	317	7569043071837518	QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+21	317	7569043071837518	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/timestamp	f22e105fa44009ee
+21	317	7569043071837518	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp	f22e105fa44009ee
+21	317	7569043071837518	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Release.cpp	f22e105fa44009ee
+21	317	7569043071837518	D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp	f22e105fa44009ee
+317	3850	7569043074676056	CMakeFiles/QtProject.dir/Debug/analysisWindow.cpp.obj	84c03caa013493a9
+3851	4368	7569043109998028	Debug/QtProject.exe	76b787a7194963d
