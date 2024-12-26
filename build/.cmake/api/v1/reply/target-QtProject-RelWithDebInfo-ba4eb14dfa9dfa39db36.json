@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/QtProject.exe"
+			"path" : "RelWithDebInfo/QtProject.exe"
 		},
 		{
-			"path" : "Debug/QtProject.pdb"
+			"path" : "RelWithDebInfo/QtProject.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -211,7 +211,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-O2 -g -DNDEBUG -std=gnu++17"
 				}
 			],
 			"defines" : 
@@ -227,6 +227,10 @@
 				{
 					"backtrace" : 2,
 					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 2,
@@ -267,7 +271,7 @@
 				},
 				{
 					"backtrace" : 0,
-					"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_Debug"
+					"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/include_RelWithDebInfo"
 				},
 				{
 					"backtrace" : 30,
@@ -326,11 +330,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "QtProject_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "QtProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "QtProject::@6890427a1f51a3e7e1df",
@@ -339,7 +343,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O2 -g -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -447,7 +451,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_Debug.cpp",
+			"path" : "D:/Uni/Sem 3/DSA/Project/build/QtProject_autogen/mocs_compilation_RelWithDebInfo.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

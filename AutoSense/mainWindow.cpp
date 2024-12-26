@@ -89,7 +89,7 @@ void MainWindow::onTextChanged(const QString &text) {
     // Check if the last character is a space
     if (text.endsWith(' ')) {
         // If the last word has no suggestions, prompt to add it to the dictionary
-        if (words.size() > 1) { // Ensure there is a previous word
+        if (words.size() >= 1) { // Ensure there is a previous word
             QString previousWord = words[words.size() - 1]; // Get the previous word
             
             // Remove trailing punctuation

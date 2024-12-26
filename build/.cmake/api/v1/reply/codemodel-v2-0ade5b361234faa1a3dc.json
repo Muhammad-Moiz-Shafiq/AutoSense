@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QtProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QtProject-Debug-fcd864259aa5a3feecc8.json",
+					"jsonFile" : "target-QtProject-Debug-3639fbca17644781144d.json",
 					"name" : "QtProject",
 					"projectIndex" : 0
 				},
@@ -105,7 +105,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QtProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QtProject-Release-452b5f585a610ff516e8.json",
+					"jsonFile" : "target-QtProject-Release-2929610fd87a777d6b18.json",
 					"name" : "QtProject",
 					"projectIndex" : 0
 				},
@@ -167,7 +167,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QtProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QtProject-RelWithDebInfo-02a64dba78607d7cdad0.json",
+					"jsonFile" : "target-QtProject-RelWithDebInfo-ba4eb14dfa9dfa39db36.json",
 					"name" : "QtProject",
 					"projectIndex" : 0
 				},

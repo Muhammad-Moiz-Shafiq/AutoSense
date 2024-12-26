@@ -23,6 +23,7 @@ private:
    void performAnalysis(const QString& text);
    
    QLabel* resultLabel;
+   QLabel* tipLabel;
    QWidget* centralWidget;
    QVBoxLayout* layout;
    ApiHandler* apiHandler;
