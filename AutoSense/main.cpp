@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     //Main Window
     MainWindow window;
     window.setWindowTitle("AutoSense");
-    window.resize(600, 600);
+    window.resize(700, 700);
     QTimer::singleShot(3000, &window, &MainWindow::show); // Show main window after 3 seconds
 
     return app.exec();

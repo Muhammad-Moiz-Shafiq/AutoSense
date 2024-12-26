@@ -17,7 +17,7 @@ AnalysisWindow::AnalysisWindow(const QString& textToAnalyze, QWidget *parent)
 void AnalysisWindow::setupUI() {
    // Set window properties
    setWindowTitle("Analysis Results");
-   resize(600, 600);
+   resize(700, 700);
    
    // Create central widget and layout
    centralWidget = new QWidget(this);
