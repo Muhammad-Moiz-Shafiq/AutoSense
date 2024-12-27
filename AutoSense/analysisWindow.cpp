@@ -200,5 +200,5 @@ void AnalysisWindow::handleFeedbackResponse(const QString& response) {
     QMessageBox::information(this, "Feedback Sent", "Your feedback has been recorded.");
    // std::cout << "Emitting analysisWindowClosed signal" << std::endl;  // Debugging statement
     emit analysisWindowClosed();  // Emit the custom signal
-    this->close();  // Close the analysis window after feedback is sent
+    this->close();  // Closing the analysis window after feedback is sent
 }

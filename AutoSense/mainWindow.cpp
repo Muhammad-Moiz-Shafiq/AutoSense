@@ -133,7 +133,7 @@ void MainWindow::onAnalyzeClicked() {
     QString text = inputField->text();
     AnalysisWindow* analysisWindow = new AnalysisWindow(text);
     
-    // Connect the custom signal to the slot
+    // Connecting the custom signal to the slot
     connect(analysisWindow, &AnalysisWindow::analysisWindowClosed, this, &MainWindow::onAnalysisWindowClosed);
     
     //cout << "Opening AnalysisWindow" << endl;  // Debugging statement
@@ -143,5 +143,5 @@ void MainWindow::onAnalyzeClicked() {
 
 void MainWindow::onAnalysisWindowClosed() {
     //cout << "Analysis window closed" << endl;  // Debugging statement
-    this->show();  // Show the main window again when AnalysisWindow is closed
+    this->show();  // Showing the main window again when AnalysisWindow is closed
 }

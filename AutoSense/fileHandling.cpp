@@ -22,6 +22,6 @@ void appendWordToFile(const string& word, const string& filename) {
         cerr << "Error: Unable to open " << filename << " for writing.\n";
         return;
     }
-    file <<"\n" <<word ; // Write the word to the file
+    file <<"\n" <<word ; 
     file.close();
 }
