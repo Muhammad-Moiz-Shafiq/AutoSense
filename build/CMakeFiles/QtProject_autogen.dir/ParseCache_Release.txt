@@ -746,6 +746,7 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
 D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.h
+D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.cpp
 D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mmc:Q_OBJECT
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
@@ -1182,7 +1183,6 @@ D:/Uni/Sem 3/DSA/Project/AutoSense/mainWindow.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/fileHandling.h
  mdp:D:/Uni/Sem 3/DSA/Project/AutoSense/trie.h
-D:/Uni/Sem 3/DSA/Project/AutoSense/apiHandler.cpp
 D:/Uni/Sem 3/DSA/Project/AutoSense/splashScreen.h
 D:/Uni/Sem 3/DSA/Project/AutoSense/analysisWindow.cpp
 D:/Uni/Sem 3/DSA/Project/AutoSense/trie.h

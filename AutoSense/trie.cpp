@@ -1,16 +1,13 @@
 #include "trie.h"
 
-// Initialize the Trie constructor
 Trie::Trie() {
-    root = new TrieNode(); // Initialize the root node
+    root = new TrieNode(); 
 }
 
-// Destructor to clean up memory
 Trie::~Trie() {
     deleteTrie(root);
 }
 
-// Insert a word into the Trie
 void Trie::insert(const string& word) {
     TrieNode* current = root;
     for (char ch : word) {
@@ -31,10 +28,9 @@ bool Trie::search(const string& word) {
         }
         current = current->children[ch]; // Move to the next node
     }
-    return current->isEndOfWord; // Check if it's a valid word
+    return current->isEndOfWord; 
 }
 
-// Check if there is any word that starts with a given prefix
 bool Trie::startsWith(const string& prefix) {
     TrieNode* current = root;
     for (char ch : prefix) {
@@ -43,7 +39,7 @@ bool Trie::startsWith(const string& prefix) {
         }
         current = current->children[ch]; // Move to the next node
     }
-    return true; // Prefix exists
+    return true; 
 }
 
 // Helper function to delete the Trie

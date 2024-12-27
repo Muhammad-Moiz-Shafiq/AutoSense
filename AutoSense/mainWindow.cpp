@@ -80,7 +80,7 @@ void MainWindow::onTextChanged(const QString &text) {
     // Display suggestions for the current word while typing
     std::vector<std::string> suggestions = trie.autocomplete(currentWord.toStdString());
     if (!suggestions.empty()) {
-        // Display suggestions
+
         for (const auto &word : suggestions) {
             suggestionBox->addItem(QString::fromStdString(word));
         }
@@ -89,14 +89,14 @@ void MainWindow::onTextChanged(const QString &text) {
     // Check if the last character is a space
     if (text.endsWith(' ')) {
         // If the last word has no suggestions, prompt to add it to the dictionary
-        if (words.size() >= 1) { // Ensure there is a previous word
+        if (words.size() >= 1) { 
             QString previousWord = words[words.size() - 1]; // Get the previous word
             
             // Remove trailing punctuation
             previousWord = previousWord.trimmed();
             if (previousWord.endsWith(QChar::fromLatin1('.')) || previousWord.endsWith(QChar::fromLatin1(',')) ||
                 previousWord.endsWith(QChar::fromLatin1('!')) || previousWord.endsWith(QChar::fromLatin1('?')) || previousWord.endsWith(QChar::fromLatin1(';')) || previousWord.endsWith(QChar::fromLatin1(':'))) {
-                previousWord.chop(1); // Remove the last character (punctuation)
+                previousWord.chop(1); 
             }
 
             std::vector<std::string> previousSuggestions = trie.autocomplete(previousWord.toStdString());
